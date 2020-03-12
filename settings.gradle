@@ -1,0 +1,4 @@
+rootProject.name='RenderAndroid'
+include ':app'
+include ':render'
+include ':browser'
