@@ -24,6 +24,9 @@
         <activity
             android:name=".SingleProcessActivity"
             android:process=":remote1" />
+        <activity
+            android:name=".SinglePresentationActivity"
+            android:process=":remote2" />
     </application>
 
 </manifest>

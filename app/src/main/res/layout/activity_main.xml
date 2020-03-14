@@ -15,4 +15,11 @@
         android:onClick="onSingleProcessActivity"
         android:text="独立页面跨进程" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSinglePresentationActivity"
+        android:textAllCaps="false"
+        android:text="独立页面跨进程+Presentation" />
+
 </LinearLayout>
