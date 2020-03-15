@@ -27,6 +27,12 @@
         <activity
             android:name=".SinglePresentationActivity"
             android:process=":remote2" />
+
+        <activity android:name=".cs.SingleBrowserActivity" />
+
+        <service
+            android:name=".cs.SingleRenderService"
+            android:process=":remote3" />
     </application>
 
 </manifest>

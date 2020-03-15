@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.viper.android.render.sample.cs.SingleBrowserActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onSinglePresentationActivity(View view) {
         Intent intent = new Intent(this, SinglePresentationActivity.class);
+        startActivity(intent);
+    }
+
+    public void onSingleBrowserActivity(View view) {
+        Intent intent = new Intent(this, SingleBrowserActivity.class);
         startActivity(intent);
     }
 }

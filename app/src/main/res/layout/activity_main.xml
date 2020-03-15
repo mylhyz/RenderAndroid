@@ -19,7 +19,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onSinglePresentationActivity"
-        android:textAllCaps="false"
-        android:text="独立页面跨进程+Presentation" />
+        android:text="独立页面跨进程+Presentation"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSingleBrowserActivity"
+        android:text="页面主进程+Presentation跨进程"
+        android:textAllCaps="false" />
 
 </LinearLayout>
