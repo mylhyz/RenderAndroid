@@ -13,9 +13,12 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.viper.android.render.log.RLog;
 import com.viper.android.render.sample.presentation.MyPresentation;
 
 public class SinglePresentationActivity extends AppCompatActivity {
+
+    private static final String TAG = "SinglePresentationActivity";
 
     private MyPresentation mPresentation;
 
@@ -49,6 +52,7 @@ public class SinglePresentationActivity extends AppCompatActivity {
         textureView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
+                RLog.debug(TAG, "onTouch action=" + motionEvent.getAction());
                 if (mPresentation != null && mPresentation.getView() != null) {
                     mPresentation.getView().dispatchTouchEvent(motionEvent);
                 }

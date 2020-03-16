@@ -80,9 +80,10 @@ public class SingleBrowserActivity extends AppCompatActivity {
         });
         textureView.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public boolean onTouch(View v, final MotionEvent event) {
+                RLog.debug(TAG, "onTouch ev=" + event.getAction());
                 tryDispatchTouchEvent(event);
-                return false;
+                return true;
             }
         });
     }

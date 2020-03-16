@@ -11,4 +11,13 @@
         android:layout_centerInParent="true"
         android:text="Hello,World" />
 
+    <View
+        android:id="@+id/touch_view"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/btn_go"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/holo_blue_bright" />
+
 </RelativeLayout>

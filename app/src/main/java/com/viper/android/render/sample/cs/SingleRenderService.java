@@ -122,6 +122,7 @@ public class SingleRenderService extends IntentService {
     }
 
     private void serviceDispatchTouchEvent(MotionEvent event) {
+        RLog.debug(TAG, "serviceDispatchTouchEvent ev=" + event.getAction());
         if (mPresentation != null && mPresentation.getView() != null) {
             mPresentation.getView().dispatchTouchEvent(event);
         }
