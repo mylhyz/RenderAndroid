@@ -37,7 +37,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mylibrary"
+    namespace = "com.viper.android.render"
     compileSdk = 34
 
     defaultConfig {
