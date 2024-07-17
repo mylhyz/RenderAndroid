@@ -17,6 +17,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.viper.android.render.log.RLog;
 import com.viper.android.render.sample.R;
 
+/**
+ * 主进程展示
+ */
 public class SingleBrowserActivity extends AppCompatActivity {
 
     private static final String TAG = "SingleBrowserActivity";

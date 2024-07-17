@@ -28,7 +28,8 @@ public class MyPresentation extends Presentation {
         findViewById(R.id.btn_go).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Hello", Toast.LENGTH_LONG).show();
+                // FIXME 无法直接弹窗
+//                Toast.makeText(getContext(), "Hello", Toast.LENGTH_LONG).show();
             }
         });
         GestureDetector.SimpleOnGestureListener simpleOnGestureListener = new GestureDetector.SimpleOnGestureListener() {

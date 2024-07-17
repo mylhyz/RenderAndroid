@@ -28,7 +28,8 @@ public class MyPresentation extends Presentation {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "show", Toast.LENGTH_LONG).show();
+                // FIXME 暂时不能支持Toast等需要判断window的
+//                Toast.makeText(getContext(), "show", Toast.LENGTH_LONG).show();
             }
         });
     }

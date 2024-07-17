@@ -16,6 +16,9 @@ import androidx.annotation.Nullable;
 
 import com.viper.android.render.log.RLog;
 
+/**
+ * 子进程渲染
+ */
 public class SingleRenderService extends IntentService {
 
     private static final String TAG = "SingleRenderService";
