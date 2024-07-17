@@ -15,7 +15,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.viper.android.render.log.RLog;
 import com.viper.android.render.sample.presentation.MyPresentation;
+import com.viper.android.render.utils.Helper;
 
+/**
+ * 在独立进程中展示Activity，通过 Presentation 产生页面数据
+ * Presentation 和 Activity在同一进程中
+ */
 public class SinglePresentationActivity extends AppCompatActivity {
 
     private static final String TAG = "SinglePresentationActivity";
@@ -52,7 +57,7 @@ public class SinglePresentationActivity extends AppCompatActivity {
         textureView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                RLog.debug(TAG, "onTouch action=" + motionEvent.getAction());
+                RLog.debug(TAG, "onTouch action=" + Helper.action(motionEvent.getAction()));
                 if (mPresentation != null && mPresentation.getView() != null) {
                     mPresentation.getView().dispatchTouchEvent(motionEvent);
                 }

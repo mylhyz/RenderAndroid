@@ -12,6 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.viper.android.render.sample.webview.MyWebChromeClient;
 import com.viper.android.render.sample.webview.MyWebViewClient;
 
+/**
+ * Activity直接在独立进程运行，与主进程无通信
+ */
 public class SingleProcessActivity extends AppCompatActivity {
 
     private static final String TAG = "SingleProcessActivity";
